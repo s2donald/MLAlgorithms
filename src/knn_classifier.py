@@ -4,7 +4,7 @@ def euclidean_distance(x1, x2):
     return np.sqrt(np.sum((x1-x2)**2))
 
 
-class KNN:
+class KNNClassifier:
     def __init(self, k=3):
         self.k = k
 
@@ -27,11 +27,6 @@ class KNN:
         # Majority Vote
         most_common = Counter(k_nearest_labels).most_common()
         return most_common[0][0]
-
-
-
-
-
 
 
 
