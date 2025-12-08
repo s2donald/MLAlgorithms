@@ -1,5 +1,6 @@
 import numpy as np
 from collections import Counter
+
 def euclidean_distance(x1, x2):
     return np.sqrt(np.sum((x1-x2)**2))
 
@@ -27,32 +28,3 @@ class KNNClassifier:
         # Majority Vote
         most_common = Counter(k_nearest_labels).most_common()
         return most_common[0][0]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
